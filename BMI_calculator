@@ -1,0 +1,28 @@
+weight=int(input('Give your weight(in kg):'))
+height=float(input('Give your height(in meters):'))
+
+bmi=weight/height**2
+
+if bmi <= 18.5:
+    print(f'BMI:{bmi}')
+    print('Under Weight')
+
+elif bmi<=24.9:
+    print(f'BMI:{bmi}')
+    print('Normal Weight')
+
+elif bmi<=29.9:
+    print(f'BMI:{bmi}')
+    print('Over Weight')
+
+elif bmi<=34.9:
+    print(f'BMI:{bmi}')
+    print('obese[class 1]')
+
+elif bmi<=39.9:
+    print(f'BMI:{bmi}')
+    print('obese[class-2]')
+
+else:
+    print(f'BMI:{bmi}')
+    print('obese[class-3]')
